@@ -38,3 +38,6 @@ select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` wher
 select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where imdb_score IS NULL; --0
 select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where aspect_ratio IS NULL; --329
 select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where movie_facebook_likes IS NULL; --0
+
+
+SELECT director_name, count(*) AS movies FROM `eternal-brand-345915.hackatoon_master.movie_metadata` group by director_name HAVING movies > 3 ORDER BY movies;
