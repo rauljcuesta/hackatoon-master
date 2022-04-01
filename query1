@@ -9,3 +9,32 @@ SELECT substring(movie_imdb_link, 27,9) as string FROM `eternal-brand-345915.hac
 -- there are lots of 10.0 but with a really low numvotes
 SELECT * FROM `eternal-brand-345915.hackatoon_master.ratings` order by averageRating desc LIMIT 1000 ;
 
+--checking nulls
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where color IS NULL; --19
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where director_name IS NULL; --104
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where num_critic_for_reviews IS NULL; --50
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where duration IS NULL; --15
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where director_facebook_likes IS NULL; --104
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_3_facebook_likes IS NULL; --23
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_2_name IS NULL; --13
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_1_facebook_likes IS NULL; --7
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where gross IS NULL; --884
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where genres IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_1_name IS NULL; --7
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where movie_title IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where num_voted_users IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where cast_total_facebook_likes IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_3_name IS NULL; --23
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where facenumber_in_poster IS NULL; --13
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where plot_keywords IS NULL; --153
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where movie_imdb_link IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where num_user_for_reviews IS NULL; --21
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where language IS NULL; --12
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where country IS NULL; --5
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where content_rating IS NULL; --303
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where budget IS NULL; --492
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where title_year IS NULL; --108
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where actor_2_facebook_likes IS NULL; --13
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where imdb_score IS NULL; --0
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where aspect_ratio IS NULL; --329
+select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` where movie_facebook_likes IS NULL; --0
