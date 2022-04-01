@@ -1,0 +1,1 @@
+SELECT * FROM `big-query-master-kschool.dataset_peliculas.movies` WHERE SUBSTRING ( movie_imdb_link ,27 , 9 ) = 'tt0360717';
