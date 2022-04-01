@@ -1,0 +1,4 @@
+SELECT
+movies.tconst, count(ratings.tconst)
+FROM (SELECT *,SUBSTRING ( movie_imdb_link ,27 , 9 ) AS tconst FROM `big-query-master-kschool.dataset_peliculas.movies`) AS movies
+LEFT JOIN `big-query-master-kschool.dataset_peliculas.ratings` AS ratings ON movies.tconst = ratings.tconst GROUP BY movies.tconst ORDER BY count(ratings.tconst) DESC;
