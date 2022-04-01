@@ -41,3 +41,10 @@ select count(*) from `eternal-brand-345915.hackatoon_master.movie_metadata` wher
 
 
 SELECT director_name, count(*) AS movies FROM `eternal-brand-345915.hackatoon_master.movie_metadata` group by director_name HAVING movies > 3 ORDER BY movies;
+
+--no duplicates in ratings
+
+SELECT tconst
+FROM   `eternal-brand-345915.hackatoon_master.ratings`
+GROUP  BY tconst
+HAVING COUNT(tconst) > 1
