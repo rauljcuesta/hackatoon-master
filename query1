@@ -1,1 +1,7 @@
 SELECT color,count(*) FROM `eternal-brand-345915.hackatoon_master.movie_metadata` group by color;
+
+-- for the future inner join
+SELECT substring(movie_imdb_link, 27,9) as string FROM `eternal-brand-345915.hackatoon_master.movie_metadata` limit 100;
+
+-- there are lots of 10.0 but with a really low numvotes
+SELECT * FROM `eternal-brand-345915.hackatoon_master.ratings` order by averageRating desc LIMIT 1000 ;
