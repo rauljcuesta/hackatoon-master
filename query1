@@ -1,3 +1,6 @@
+presentacion:
+https://docs.google.com/presentation/d/1vwKqxxbofqY3vVT5COCMD29Tw21pqvavrRJjF5pmW0E/edit#slide=id.g1213b43e73a_0_5
+
 SELECT color,count(*) FROM `eternal-brand-345915.hackatoon_master.movie_metadata` group by color;
 
 -- for the future inner join
@@ -5,3 +8,4 @@ SELECT substring(movie_imdb_link, 27,9) as string FROM `eternal-brand-345915.hac
 
 -- there are lots of 10.0 but with a really low numvotes
 SELECT * FROM `eternal-brand-345915.hackatoon_master.ratings` order by averageRating desc LIMIT 1000 ;
+
