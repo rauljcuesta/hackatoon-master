@@ -1,0 +1,1 @@
+SELECT color,count(color) FROM `eternal-brand-345915.hackatoon_master.movie_metadata` group by color;
